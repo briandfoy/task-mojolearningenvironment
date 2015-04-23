@@ -1,3 +1,7 @@
 # changes for Task::MojoLearningEnvironment
 
+0.001 2015-04-23T02:39:32Z
+	* First try at a Task to install everything for a Mojo class
+	at MojoConf 2015.
+
 
