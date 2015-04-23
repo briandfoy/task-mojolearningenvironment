@@ -19,6 +19,8 @@ source ~/.bashrc
 ( git clone https://github.com/briandfoy/Task-MojoLearningEnvironment && cd Task-MojoLearningEnvironment && cpanm --local-lib .)
 
 sudo apt-get install -y nano
+sudo apt-get install automake autoconf libtool
+sudo apt-get install xsltproc
 sudo apt-get install -y emacs
 
 sudo apt-get install -y libexpat libexpat-dev
