@@ -12,6 +12,7 @@ sudo apt-get install -y cpanminus
 
 ( git clone https://github.com/Perl-Toolchain-Gang/local-lib && cd local-lib && perl Makefile.PL --bootstrap && make install )
 perl -Mlocal::lib >> ~/.bashrc
+source ~/.bashrc
 
 
 
