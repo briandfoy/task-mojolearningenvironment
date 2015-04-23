@@ -73,6 +73,7 @@ my %WriteMakefile = (
 		'DBD::SQLite'  => '0',
 		'Sereal'       => '0',
 		'XML::Twig'    => '0',
+		'Mojo::Pg'     => '0',
 		},
 
 	'META_MERGE' => {
