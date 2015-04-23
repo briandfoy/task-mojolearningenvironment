@@ -10,6 +10,3 @@ t/load.t
 t/pod.t
 t/pod_coverage.t
 t/test_manifest
-Task-MojoLearningEnvironment-0.001.tar.gz
-Task-MojoLearningEnvironment-0.001/META.json
-Task-MojoLearningEnvironment-0.001/META.yml
