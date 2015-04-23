@@ -52,7 +52,7 @@ my %WriteMakefile = (
 	'LICENSE'      => 'perl',
 	'AUTHOR'       => 'brian d foy <bdfoy@cpan.org>',
 
-	'EXE_FILES' => [ qw(scripts/survey) ],
+	'EXE_FILES' => [ qw() ],
 
 	'CONFIGURE_REQUIRES' => {
 		'ExtUtils::MakeMaker' => '6.64',
