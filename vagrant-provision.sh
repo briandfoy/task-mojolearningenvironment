@@ -14,9 +14,7 @@ sudo apt-get install -y cpanminus
 perl -Mlocal::lib >> ~/.bashrc
 source ~/.bashrc
 
-
-
-( git clone https://github.com/briandfoy/Task-MojoLearningEnvironment && cd Task-MojoLearningEnvironment && cpanm --local-lib .)
+cpanm --local-lib Mojolicious
 
 sudo apt-get install -y nano
 sudo apt-get install automake autoconf libtool
