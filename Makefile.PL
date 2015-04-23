@@ -66,14 +66,14 @@ my %WriteMakefile = (
 		},
 
 	'PREREQ_PM'     => {
+		'DBD::SQLite'  => '0',
+		'DBI'          => '0',
 		'local::lib'   => '0',
+		'Mojo::Pg'     => '0',
 		'Mojolicious'  => '0',
 		'Redis'        => '0',
-		'DBI'          => '0',
-		'DBD::SQLite'  => '0',
 		'Sereal'       => '0',
 		'XML::Twig'    => '0',
-		'Mojo::Pg'     => '0',
 		},
 
 	'META_MERGE' => {
