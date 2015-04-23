@@ -14,7 +14,7 @@ sudo apt-get install -y cpanminus
 perl -Mlocal::lib >> ~/.bashrc
 source ~/.bashrc
 
-cpanm --local-lib Mojolicious
+cpanm Task::MojoLearningEnvironment
 
 sudo apt-get install -y nano
 sudo apt-get install -y emacs
