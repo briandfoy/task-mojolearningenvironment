@@ -9,6 +9,8 @@ use vars qw($VERSION);
 
 $VERSION = '0.001';
 
+=encoding utf8
+
 =head1 NAME
 
 Task::MojoLearningEnvironment -  Everything you need to play with Mojolicious, and more
