@@ -12,11 +12,55 @@ You're probably looking at this because you don't know where else to
 find what you're looking for. Read this once and you might never have
 to read one again for any Perl module.
 
+=head2 Quickstart
+
+Install L<Vagrant|http://www.vagrantup.com/downloads>, available for 
+Linux, Windows, and Mac OS X.
+
+Add an Ubuntu image. Other distros may work, but the provisioning
+script assumes Ubuntu.
+
+	% vagrant box add ubuntu/trusty64 https://atlas.hashicorp.com/ubuntu/boxes/trusty64
+
+Install the C<vagrant-vbox-snapshot> plugin. This allows you to take
+snapshots of your vagrant box. With a snapshot, you can mess up
+everything with no worries since you can go back to any point.
+
+	% vagrant plugin install vagrant-vbox-snapshot
+
+Start vagrant. It reads the F<VagrantFile> in the current directory,
+and should provision the box following the F<vagrant-provision.sh>
+script. This will take awhile the first time:
+
+	% vagrant up
+
+Before you do anything, take a snapshot with the beginning state. I like
+to name this snapshot "first":
+
+	% vagrant snapshot take first
+
+If you like what you have, take another snapshot.
+
+	% vagrant snapshot take provisioned
+
+Once up, you can F<ssh> into the box:
+
+	% vagrant ssh
+
+When you want to take the box down:
+
+	% vagrant down
+
+=head3 Without vagrant
+
+You might try the F<vagrant-provision.sh> program as a normal shell
+script. On Ubuntu it should setup everything.
+
 =head2 Documentation
 
-To read about L<Task::MojoLearningEnvironment>, look at the embedded documentation
-in the module itself. Inside the distribution, you can format it
-with L<perldoc|http://perldoc.perl.org/perldoc.html>:
+To read about L<Task::MojoLearningEnvironment>, look at the embedded
+documentation in the module itself. Inside the distribution, you can
+format it with L<perldoc|http://perldoc.perl.org/perldoc.html>:
 
 	% perldoc lib/Task/MojoLearningEnvironment.pm
 
@@ -26,8 +70,10 @@ name instead of the file location:
 	% perldoc Task::MojoLearningEnvironment
 
 You can read the documentation and inspect the meta data on one of the
-CPAN web interfaces, such as L<CPAN Search|http://search.cpan.org/dist/Task-MojoLearningEnvironment> or
-L<MetaCPAN|http://www.metacpan.org/module/Task::MojoLearningEnvironment>:
+CPAN web interfaces, such as L<CPAN
+Search|http://search.cpan.org/dist/Task-MojoLearningEnvironment> or
+L<MetaCPAN|http://www.metacpan.org/module/Task::
+MojoLearningEnvironment>:
 
 =over 4
 

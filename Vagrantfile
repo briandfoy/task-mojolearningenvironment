@@ -5,9 +5,9 @@ Vagrant.configure(2) do |config|
 		v.memory = 1024
 	end
 
-	config.vm.network "forwarded_port", guest: 8080, host: 8080
+	config.vm.network "forwarded_port", guest: 3000, host: 8080
 
 	config.vm.synced_folder "./", "/home/vagrant/shared_files"
 
-	config.vm.provision "shell", privileged: false, path: "https://raw.githubusercontent.com/briandfoy/Task-MojoLearningEnvironment/master/vagrant-provision.sh"
+	config.vm.provision "shell", privileged: false, path: "vagrant-provision.sh"
 end
