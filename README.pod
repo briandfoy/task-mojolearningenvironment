@@ -14,7 +14,7 @@ to read one again for any Perl module.
 
 =head2 Quickstart
 
-Install L<Vagrant|http://www.vagrantup.com/downloads>, available for 
+Install L<Vagrant|http://www.vagrantup.com/downloads>, available for
 Linux, Windows, and Mac OS X.
 
 Add an Ubuntu image. Other distros may work, but the provisioning
@@ -69,19 +69,9 @@ name instead of the file location:
 
 	% perldoc Task::MojoLearningEnvironment
 
-You can read the documentation and inspect the meta data on one of the
-CPAN web interfaces, such as L<CPAN
-Search|http://search.cpan.org/dist/Task-MojoLearningEnvironment> or
+You can read the documentation and inspect the meta data at
 L<MetaCPAN|http://www.metacpan.org/module/Task::
-MojoLearningEnvironment>:
-
-=over 4
-
-=item *	L<http://search.cpan.org/dist/Task-MojoLearningEnvironment>
-
-=item *	L<http://www.metacpan.org/module/Task::MojoLearningEnvironment>
-
-=back
+MojoLearningEnvironment>.
 
 The standard module documentation has example uses in the SYNOPSIS
 section, but you can also look in the I<examples/> directory (if it's
