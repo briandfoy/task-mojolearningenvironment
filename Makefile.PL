@@ -66,14 +66,20 @@ my %WriteMakefile = (
 		},
 
 	'PREREQ_PM'     => {
-		'DBD::SQLite'  => '0',
-		'DBI'          => '0',
-		'local::lib'   => '0',
-		'Mojo::Pg'     => '0',
-		'Mojolicious'  => '0',
-		'Redis'        => '0',
-		'Sereal'       => '0',
-		'XML::Twig'    => '0',
+		'Carp'              => '0',
+		'DBD::SQLite'       => '0',
+		'DBI'               => '0',
+		'EV'                => '4',
+		'IO::Socket::Socks' => '0.64',
+		'IO::Socket::SSL'   => '2.009',
+		'local::lib'        => '0',
+		'Mojo::Pg'          => '0',
+		'Mojolicious'       => '0',
+		'Net::DNS::Native'  => '0.15',
+		'Redis'             => '0',
+		'Role::Tiny'        => '0',
+		'Sereal'            => '0',
+		'XML::Twig'         => '0',
 		},
 
 	'META_MERGE' => {
