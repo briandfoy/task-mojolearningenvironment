@@ -8,3 +8,4 @@ Dist*
 *.bak
 MYMETA*
 META*
+.vagrant
