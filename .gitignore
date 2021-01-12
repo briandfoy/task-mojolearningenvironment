@@ -10,3 +10,6 @@ MYMETA*
 META*
 .vagrant
 *.icould
+MANIFEST*[123456789]
+Changes*[123456789]
+
