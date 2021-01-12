@@ -67,3 +67,6 @@
 \.releaserc
 \.lwpcookies
 \.vagrant
+\bMANIFEST\s\d
+\bChanges\s\d
+
