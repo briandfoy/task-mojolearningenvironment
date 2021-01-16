@@ -9,7 +9,8 @@ Dist*
 MYMETA*
 META*
 .vagrant
-*.icould
+*.icloud
+
 MANIFEST*[123456789]
 Changes*[123456789]
 
