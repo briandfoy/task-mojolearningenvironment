@@ -31,7 +31,7 @@ jobs:
                 curl -L https://cpanmin.us | perl - App::cpanminus
                 cpanm --notest IO::Socket::SSL
                 cpanm --notest App::Cpan
-                cpan -M https://www.cpan.org -T ExtUtils::MakeMaker
+                cpan -M https://www.cpan.org -T ExtUtils::MakeMaker Test::Pod
             - name: Run tests
               run: |
                 perl Makefile.PL
