@@ -74,7 +74,7 @@ script. On Ubuntu it should setup everything.
 
 To read about L<Task::MojoLearningEnvironment>, look at the embedded
 documentation in the module itself. Inside the distribution, you can
-format it with L<perldoc|https://perldoc.perl.orgperldoc.html>:
+format it with L<perldoc|https://perldoc.perl.org/perldoc.html>:
 
 	% perldoc lib/Task/MojoLearningEnvironment.pm
 
