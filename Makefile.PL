@@ -40,7 +40,7 @@ use File::Spec::Functions qw(catfile);
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
-my $github    = 'https://github.com/briandfoy/task-mojolearningenvironment.git';
+my $github    = 'https://github.com/briandfoy/task-mojolearningenvironment';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
@@ -87,7 +87,7 @@ my %WriteMakefile = (
 		resources => {
 			repository => {
 				type => 'git',
-				url  => "$github.git",
+				url  => $github,
 				web  => $github,
 				},
 			bugtracker => {
