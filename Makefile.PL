@@ -49,8 +49,8 @@ my %WriteMakefile = (
 	'NAME'	       => $module,
 	'ABSTRACT_FROM' => $main_file,
 	'VERSION_FROM'  => $main_file,
-	'LICENSE'      => 'artistic_2',
-	'AUTHOR'       => 'brian d foy <bdfoy@cpan.org>',
+	'LICENSE'       => 'artistic_2',
+	'AUTHOR'        => 'brian d foy <briandfoy@pobox.com>',
 
 	'EXE_FILES' => [ qw() ],
 
