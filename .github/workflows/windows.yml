@@ -1,5 +1,5 @@
 # brian's standard GitHub Actions Windows config for Perl 5 modules
-# version 20250126.001
+# version 20250316.001
 # https://github.com/briandfoy/github_workflows
 # https://github.com/features/actions
 # This file is licensed under the Artistic License 2.0
@@ -72,14 +72,15 @@ jobs:
         strategy:
             matrix:
                 os:
-                    - windows-2019
                     - windows-2022
+                    - windows-2025
         steps:
             - run: git config --global core.autocrlf false
             - uses: actions/checkout@v3
             - name: Set up Perl
               run: |
-                choco install strawberryperl
+                choco uninstall strawberryperl
+                choco upgrade strawberryperl
                 echo "C:\strawberry\c\bin"         | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
                 echo "C:\strawberry\perl\site\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
                 echo "C:\strawberry\perl\bin"      | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
